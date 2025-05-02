@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Mengimpor ikon dari React Icons
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const CategoryPage = () => {
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
   const categories = [
     {
@@ -95,10 +95,6 @@ const CategoryPage = () => {
           <div
             ref={scrollContainerRef}
             className="scrollbar-hide flex space-x-5 overflow-x-auto pb-8 md:pb-4"
-            style={{
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-            }}
           >
             {categories.map((category, index) => (
               <div
