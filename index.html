@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript">
+ 
+
+    <title>Readdora</title>
+    <link
+      rel="icon"
+      href="/src/assets/favicon-32x32.png  "
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+       <script type="text/javascript">
     window.mychat = window.mychat || {};
     window.mychat.server = 'https://live.cekat.ai/widget.js';
     window.mychat.iframeWidth = '400px';
@@ -18,16 +29,6 @@
         s.parentNode.insertBefore(mychat, s);
     })();
 </script>
-
-    <title>Readdora</title>
-    <link
-      rel="icon"
-      href="/src/assets/favicon-32x32.png  "
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
