@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@custom-variant dark (&:where(.dark, .dark *));
+body {
+  background-color: #111827;
+}
+/* Menyembunyikan scrollbar horizontal */
+/* Menyembunyikan scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Untuk Internet Explorer 10+ */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Untuk Firefox */
+}
+
+/* CSS untuk interaksi geser */
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+/* Interaksi geser menggunakan mouse */
+.hide-scrollbar:active {
+  cursor: grabbing;
+}
+
+/* Animasi untuk membuat testimonial bergerak tanpa jeda */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
