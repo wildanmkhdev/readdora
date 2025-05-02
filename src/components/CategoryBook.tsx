@@ -94,7 +94,12 @@ const CategoryPage = () => {
         <div className="relative overflow-hidden">
           <div
             ref={scrollContainerRef}
-            className="scrollbar-hide flex space-x-5 overflow-x-auto pb-8 md:pb-4"
+            className="flex space-x-5 pb-8 md:pb-4"
+            style={{
+              overflowX: "auto",
+              scrollbarWidth: "none", // For Firefox
+              msOverflowStyle: "none", // For Internet Explorer
+            }}
           >
             {categories.map((category, index) => (
               <div

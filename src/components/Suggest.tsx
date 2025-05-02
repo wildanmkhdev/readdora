@@ -4,7 +4,8 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "flowbite-react";
-export default function Suggest() {
+
+const Suggest = () => {
   return (
     <div className="container mx-auto max-w-full px-4 sm:px-6 lg:px-8">
       <h2 className="sm:text-1xl mb-8 text-center text-2xl font-bold text-white lg:text-4xl">
@@ -12,89 +13,72 @@ export default function Suggest() {
       </h2>
       <Accordion collapseAll>
         <AccordionPanel>
-          <AccordionTitle>What is Flowbite?</AccordionTitle>
+          <AccordionTitle>What is Readoora?</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              Flowbite is an open-source library of interactive components built
-              on top of Tailwind CSS including buttons, dropdowns, modals,
-              navbars, and more.
-            </p>
-            <p className="text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              Check out this guide to learn how to&nbsp;
-              <a
-                href="https://flowbite.com/docs/getting-started/introduction/"
-                className="text-cyan-600 hover:underline dark:text-cyan-500"
-              >
-                get started&nbsp;
-              </a>
-              and start developing websites even faster with components on top
-              of Tailwind CSS.
+              Readoora is a modern platform where you can find and purchase
+              ebooks easily. Simply click on the book you want, complete the
+              payment, and start reading your ebook instantly.
             </p>
           </AccordionContent>
         </AccordionPanel>
+
         <AccordionPanel>
-          <AccordionTitle>Is there a Figma file available?</AccordionTitle>
+          <AccordionTitle>How do I buy an ebook on Readoora?</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              Flowbite is first conceptualized and designed using the Figma
-              software so everything you see in the library has a design
-              equivalent in our Figma file.
-            </p>
-            <p className="text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              Check out the
-              <a
-                href="https://flowbite.com/figma/"
-                className="text-cyan-600 hover:underline dark:text-cyan-500"
-              >
-                Figma design system
-              </a>
-              based on the utility classes from Tailwind CSS and components from
-              Flowbite.
+              To buy an ebook, select the book you wish to purchase, click
+              "Buy," and proceed to the payment page to complete your
+              transaction.
             </p>
           </AccordionContent>
         </AccordionPanel>
+
+        <AccordionPanel>
+          <AccordionTitle>Can I download the ebooks I purchase?</AccordionTitle>
+          <AccordionContent>
+            <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
+              Most ebooks on Readoora can be read online. Some may be available
+              for download, depending on the publisher’s policy.
+            </p>
+          </AccordionContent>
+        </AccordionPanel>
+
+        <AccordionPanel>
+          <AccordionTitle>How can I access the ebook I bought?</AccordionTitle>
+          <AccordionContent>
+            <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
+              After completing your purchase, the ebook will be available in
+              your "My Library" section, and you can read it at any time.
+            </p>
+          </AccordionContent>
+        </AccordionPanel>
+
         <AccordionPanel>
           <AccordionTitle>
-            What are the differences between Flowbite and Tailwind UI?
+            Is there a time limit to read my purchased ebook?
           </AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              The main difference is that the core components from Flowbite are
-              open source under the MIT license, whereas Tailwind UI is a paid
-              product. Another difference is that Flowbite relies on smaller and
-              standalone components, whereas Tailwind UI offers sections of
-              pages.
+              No, there is no time limit. Once you've purchased an ebook, you
+              can access it anytime as long as your account remains active.
             </p>
+          </AccordionContent>
+        </AccordionPanel>
+
+        <AccordionPanel>
+          <AccordionTitle>How do I contact customer support?</AccordionTitle>
+          <AccordionContent>
             <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              However, we actually recommend using both Flowbite, Flowbite Pro,
-              and even Tailwind UI as there is no technical reason stopping you
-              from using the best of two worlds.
+              If you need assistance, you can contact customer support by
+              emailing us at [email@example.com] or using the live chat feature
+              on the website.
             </p>
-            <p className="mb-2 text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              Learn more about these technologies:
-            </p>
-            <ul className="list-disc pl-5 text-sm text-gray-500 sm:text-base dark:text-gray-400">
-              <li>
-                <a
-                  href="https://flowbite.com/pro/"
-                  className="text-cyan-600 hover:underline dark:text-cyan-500"
-                >
-                  Flowbite Pro
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://tailwindui.com/"
-                  rel="nofollow"
-                  className="text-cyan-600 hover:underline dark:text-cyan-500"
-                >
-                  Tailwind UI
-                </a>
-              </li>
-            </ul>
           </AccordionContent>
         </AccordionPanel>
       </Accordion>
     </div>
   );
-}
+};
+
+export default Suggest;

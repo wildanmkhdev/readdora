@@ -13,20 +13,15 @@ export default function MyNavbar() {
   return (
     <Navbar className="bg-gray-900">
       <NavbarBrand href="#">
-        <img src={logos} alt="Logo" className="h-20 w-auto" />
-        <span className="self-center text-3xl font-semibold whitespace-nowrap text-white">
+        <span className="self-center ps-2.5 text-3xl font-semibold whitespace-nowrap text-white">
           Readdora
         </span>
       </NavbarBrand>
-      <div className="flex md:order-2 space-x-2">
-        <Button className="hidden md:block">Get started</Button>
+      <div className="flex space-x-2 md:order-2">
         <div className="hidden md:block">
-          <TextInput
-            type="text"
-            placeholder="Search..."
-            className="w-40"
-          />
+          <TextInput type="text" placeholder="Search..." className="w-40" />
         </div>
+        <Button className="hidden md:block">Get started</Button>
         <NavbarToggle className="border-none shadow-none focus:ring-0 focus:outline-none" />
       </div>
       <NavbarCollapse className="!border-none bg-gray-900 shadow-none">

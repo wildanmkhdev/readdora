@@ -27,7 +27,7 @@ const TestimonialPage: React.FC = () => {
   return (
     <section className="bg-gray-900 px-6 py-16 text-white lg:px-24">
       <h2 className="sm:text-1xl mb-8 text-center text-2xl font-bold lg:text-4xl">
-        Apa Kata Pelanggan Kami?
+        What`s Costumer Say ?
       </h2>
       <div className="overflow-hidden">
         <div className="animate-marquee flex space-x-6">

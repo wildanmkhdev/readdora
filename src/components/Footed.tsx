@@ -26,17 +26,17 @@ export default function Component() {
           <div>
             <FooterBrand
               href="https://flowbite.com"
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              name="Flowbite"
+              src="/src/assets/favicon-32x32.png  "
+              alt=""
+              name="Readdora"
             />
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <FooterTitle title="about" />
               <FooterLinkGroup col>
-                <FooterLink href="#">Flowbite</FooterLink>
-                <FooterLink href="#">Tailwind CSS</FooterLink>
+                <FooterLink href="#">Readdora</FooterLink>
+                <FooterLink href="#">E-book Store</FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
@@ -57,7 +57,7 @@ export default function Component() {
         </div>
         <FooterDivider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <FooterCopyright href="#" by="Flowbite™" year={2022} />
+          <FooterCopyright href="#" by="Readdora™" year={2025} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <FooterIcon href="#" icon={BsFacebook} />
             <FooterIcon href="#" icon={BsInstagram} />
