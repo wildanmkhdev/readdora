@@ -1,5 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
+import { useNavigate } from "react-router-dom"; // Impor useNavigate
 import books from "../db/books.ts";
 
 // Interface untuk tipe data buku
@@ -19,6 +20,13 @@ interface BookCardProps {
 
 // Komponen untuk menampilkan kartu buku individual
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
+  const navigate = useNavigate(); // Inisialisasi navigate
+
+  // Fungsi untuk menangani klik dan menavigasi ke halaman checkout
+  const handleCardClick = () => {
+    navigate(`/checkout/${book.id}`);
+  };
+
   const renderStars = (rating: number) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -59,7 +67,10 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
   };
 
   return (
-    <div className="w-full overflow-hidden rounded-md bg-gray-800 p-2 shadow-md transition-all hover:shadow-lg">
+    <div
+      onClick={handleCardClick} // Menambahkan event onClick untuk navigasi
+      className="w-full cursor-pointer overflow-hidden rounded-md bg-gray-800 p-2 shadow-md transition-all hover:shadow-lg"
+    >
       <div className="aspect-[3/4] overflow-hidden rounded">
         <img
           src={book.coverImage}
