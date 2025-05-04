@@ -1,6 +1,6 @@
 import React from "react";
 import { Star } from "lucide-react";
-import books from "../books.ts";
+import books from "../db/books.ts";
 
 // Interface untuk tipe data buku
 interface Book {
