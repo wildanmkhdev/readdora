@@ -46,11 +46,6 @@ const Footed: React.FC = () => {
           {/* Logo and description */}
           <div className="mb-8 md:mb-0 md:w-1/3">
             <div className="mb-4 flex items-center">
-              <img
-                src="/logo.png"
-                alt="Readdora Logo"
-                className="mr-2 h-8 w-auto"
-              />
               <span className="text-xl font-bold text-white">Readdora</span>
             </div>
             <p className="pr-4 text-sm text-gray-400">
