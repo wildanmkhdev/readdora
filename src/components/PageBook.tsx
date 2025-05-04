@@ -6,17 +6,17 @@ const PopularBooks: React.FC = () => {
     {
       title: "The Great Adventure",
       author: "John Doe",
-      img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      img: "https://i0.wp.com/agosbookstore.com/wp-content/uploads/2024/01/cbdbe742-caac-408f-beb2-4ef750b81332.png?fit=500%2C743&ssl=1",
     },
     {
       title: "Mystery of the Deep",
       author: "Jane Smith",
-      img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      img: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Sebuah-seni-untuk-bersikap-bodoh-amat.jpg",
     },
     {
       title: "The World Beyond",
       author: "Michael Brown",
-      img: "https://images.unsplash.com/photo-1512820790803-83ca734da794",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymThxDkwzaCF4DmJEgEBV8SnDawddZchOJA&s",
     },
     {
       title: "Unseen Realms",

@@ -75,7 +75,10 @@ const BookCard: React.FC<BookCardProps> = ({ book }) => {
           <span className="text-[10px] text-gray-300">{book.rating}</span>
         </div>
         <div className="mt-1 text-sm font-bold text-white">
-          ${book.price.toFixed(2)}
+          {new Intl.NumberFormat("id-ID", {
+            style: "currency",
+            currency: "IDR",
+          }).format(book.price)}
         </div>
       </div>
     </div>
