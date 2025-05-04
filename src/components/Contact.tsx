@@ -9,8 +9,8 @@ const CommentForm: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <div className="container mx-auto max-w-3xl rounded-lg bg-gray-900 p-6 text-white">
-      <h2 className="mb-8 text-center text-3xl font-bold lg:text-4xl">
+    <div className="container mx-auto max-w-3xl rounded-lg bg-gray-900 p-9 text-white">
+      <h2 className="mb-0 text-center text-3xl font-bold lg:text-4xl">
         Contact
       </h2>
       <Stepper
@@ -54,6 +54,7 @@ const CommentForm: React.FC = () => {
             />
           </div>
         </Step>
+  
 
         <Step>
           <div className="step-container">

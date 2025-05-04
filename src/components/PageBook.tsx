@@ -39,7 +39,7 @@ const PopularBooks: React.FC = () => {
           </h2>
           {/* Tombol Lihat Semua */}
           <Link
-            to="/popular-books" // Ganti dengan path halaman Lihat Semua
+            to="/all_categories" // Ganti dengan path halaman Lihat Semua
             className="text-lg text-blue-400 hover:text-blue-300"
           >
             See All
