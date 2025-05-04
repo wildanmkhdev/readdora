@@ -1,10 +1,9 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import books from "../db/books.ts";
 
 const CheckoutPage: React.FC = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const book = books.find((b) => b.id === parseInt(id || "", 10));
 
   if (!book) {
@@ -12,8 +11,7 @@ const CheckoutPage: React.FC = () => {
   }
 
   const handleBuy = () => {
-    alert(`Terima kasih telah membeli buku: ${book.title}`);
-    navigate("/");
+    window.location.href = book.purchaseUrl;
   };
 
   return (

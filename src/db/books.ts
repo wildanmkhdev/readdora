@@ -17,7 +17,7 @@ const books: Book[] = [
     price: 45000, // Rp45.000
     coverImage:
       "https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2024/1/20/qvjtc65vbzmexfegzrgs7u.jpg",
-    purchaseUrl: "https://example.com/book1",
+    purchaseUrl: "https://lynk.id/wildan_mukhaladun/4vr3zze6dx40",
   },
   {
     id: 2,
